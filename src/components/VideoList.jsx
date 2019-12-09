@@ -1,10 +1,10 @@
-var VideoList = () => (
+import VideoListEntry from "VideoListEntry"
+var VideoList = (videos) => (
   <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+    <VideoListEntry video={videos[0]}/>
+    <VideoListEntry video={videos[1]}/>
+    <VideoListEntry video={videos[2]}/>
+    <VideoListEntry video={videos[3]}/>
   </div>
 );
 
